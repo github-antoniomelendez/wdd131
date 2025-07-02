@@ -1,39 +1,45 @@
+/* Page grid layout */
 html, body {
     height: 100%;
     margin: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-    flex: 1;
-    display: flex;
-}
-
-header, footer {
+/* Header layout with nav at bottom */
+header {
+    display: grid;
+    grid-template-rows: auto auto; /* header content + nav */
     background-color: #333;
     color: white;
-    padding: 50px 50px;
-    text-align: left;
-    font-size: 1.2em;
-    font-weight: bold;
-    display: flex;
-    height: 100px;
+    min-height: 100px; /* base height, can grow */
 }
 
+/* Header top content */
+.header-top {
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* Navigation at bottom */
 nav {
     background-color: #000;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -49,27 +55,33 @@ nav ul li a:hover {
     transition: font-size 0.2s ease-in-out;
 }
 
+/* Content grid (main and aside) */
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
+/* Main and aside styles */
 main {
-    flex: 3;
-    padding: 20px;
     background-color: #ccc;
+    padding: 20px;
 }
 
 aside {
-    flex: 1;
-    padding: 20px;
     background-color: white;
+    padding: 20px;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px; /* dynamic height based on content */
     font-weight: bold;
+    font-size: 1.2em;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
