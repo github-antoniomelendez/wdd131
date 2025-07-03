@@ -39,6 +39,15 @@ header {
     text-align: center;
 }
 
+#course-title {
+    display: block;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--light-bg); /* if using inside a dark header */ 
+}
+
 header h1 {
     font-size: clamp(2rem, 2vw, 2rem);
 }
@@ -94,17 +103,43 @@ main {
     margin: 2rem auto;
     padding: 0 1rem;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-@media (min-width: 768px) {
+main h1 {
+    grid-column: 1 / -1; /* spans all columns */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+
+.about-card {
+    grid-column: span 2; /* first 2/3 of the space (left side) */
+}
+    
+.resources-card {
+    grid-column: span 1; /* last 1/3 of the space (right side) */     
+}
+
+@media (max-width: 768px) {
     main {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .about-card, .resources-card {
+        grid-column:  1 / -1;
     }
 }
 
 /* Cards */
+/* Card Layout */
+.about-card {
+    grid-column: span 2; /* takes 2/3 width if grid is 3 columns */
+}
+
+.resources-card {
+    grid-column: span 1; }
+
 .card {
     border: 1px solid #ccc;
     border-radius: 10px;
