@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color: dodgerblue;
+    --primary-color: #003366;
     --text-color: #111;
     --light-bg: white;
     --nav-bg: #2f2f2f;
@@ -178,7 +178,7 @@ p {
 /* Footer */
 footer {
     background-color: var(--primary-color);
-    color: var(--nav-bg);
+    color: var(--light-bg);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -190,5 +190,5 @@ footer p {
 }
 
 #lastModified {
-    color: var(--nav-bg);
+    color: var(--light-bg);
 }
