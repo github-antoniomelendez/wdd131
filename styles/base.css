@@ -1,3 +1,6 @@
+/* Import Roboto Font as fallback, just in case */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
     --primary-color: dodgerblue;
     --text-color: #111;
