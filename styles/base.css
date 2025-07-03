@@ -178,7 +178,7 @@ p {
 /* Footer */
 footer {
     background-color: var(--primary-color);
-    color: var(--light-bg);
+    color: var(--nav-bg);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -190,5 +190,5 @@ footer p {
 }
 
 #lastModified {
-    color: var(--light-bg);
+    color: var(--nav-bg);
 }
