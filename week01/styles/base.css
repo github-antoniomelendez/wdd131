@@ -4,7 +4,7 @@
     --light-bg: whitesmoke;
     --nav-bg: #2f2f2f;
     --hover-bg: #555;
-    --accent-color: #f6c700;
+    --accent-color: whitesmoke;
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     --font-main: 'Roboto', sans-serif;
 }
@@ -38,7 +38,7 @@ header {
 }
 
 header h1 {
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(2rem, 2vw, 2rem);
 }
 
 h2 {
@@ -47,6 +47,7 @@ h2 {
     color: var(--light-bg);
     border-radius: 5px;
     padding: 0.5rem;
+    font-size: 1.75rem;
 }
 
 h3 {
@@ -136,7 +137,7 @@ main {
 .profile-img {
     max-width: 300px;
     width: 200px;
-    height: 225px;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -184,7 +185,7 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 0.95rem;
+    font-size: 1.3rem;
 }
 
 footer p {
