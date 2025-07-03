@@ -1,10 +1,9 @@
 :root {
     --primary-color: dodgerblue;
     --text-color: #111;
-    --light-bg: whitesmoke;
+    --light-bg: white;
     --nav-bg: #2f2f2f;
     --hover-bg: #555;
-    --accent-color: whitesmoke;
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     --font-main: 'Roboto', sans-serif;
 }
@@ -52,11 +51,6 @@ h2 {
 
 h3 {
     text-align: center;
-}
-
-header .highlight {
-    color: var(--accent-color);
-    font-weight: bold;
 }
 
 /* Navigation */
