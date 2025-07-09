@@ -19,8 +19,6 @@
         font-size: 1.1rem;
     }
 
-    /* Hover effect still applies (in temples.css) */
-
     /* 3x3 Grid for temple figures */
     main {
         display: grid;
