@@ -3,17 +3,13 @@ const temperature = 25; // Celsius
 const windSpeed = 13;    // km/h
 
 
-// Calculates wind chill based on Celsius formula.
- 
+// Calculates wind chill based on Celsius formula, uses one line of code.
 function calculateWindChill(tempC, windKmH) {
   return (
-    13.12 +
-    0.6215 * tempC -
-    11.37 * Math.pow(windKmH, 0.16) +
-    0.3965 * tempC * Math.pow(windKmH, 0.16)
-  ).toFixed(1); // Rounded to one decimal
+    13.12 + 0.6215 * tempC - 11.37 * Math.pow(windKmH, 0.16) + 0.3965 * tempC * Math.pow(windKmH, 0.16)).toFixed(1);
 }
 
+// Applies calculateWindChill Function if conditions are met
 window.addEventListener("DOMContentLoaded", () => {
   let windChillValue = "N/A";
 

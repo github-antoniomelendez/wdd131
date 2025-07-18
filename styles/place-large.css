@@ -1,14 +1,19 @@
 /* Desktop View */
+:root {
+    --primary-color: #8c0d1e;
+    --accent-color: #165016;
+}
+
 @media screen and (min-width: 825px) {
     main {
         background-image: url('../images/México-large.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 100vh; /* Optional: Ensures it fills full height */
+        min-height: 100vh; 
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Optional: centers content vertically */
+        justify-content: center; 
     }
 
     .hero-image {
@@ -16,7 +21,7 @@
     }
 
     main img.hero-image {
-        display: none; /* Hide img tag if it exists */
+        display: none; 
     }
 
     .hero-image img {
@@ -52,14 +57,10 @@
     }
 
     .weather h2::after {
-        content: "";
+        content: "☀️";
         display: inline-block;
-        width: 45px;
-        height: 45px;
+        font-size: 3rem;
         margin-left: 20px;
-        background-image: url('../images/sunny_icon.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
         vertical-align: middle;
     }
 
