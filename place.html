@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - México</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Place Webpage">
+    <meta name="author" content="Antonio Melendez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>México</h1>
+    </header>
+
+    <main>
+        <picture class="hero-image">
+            <source srcset="images/México-large.webp" media="(min-width: 768px)">
+            <img src="images/México-small.webp" alt="Méxican Pyramid">
+        </picture>
+
+
+        <section class="info-box data">
+            <h2>Data</h2>
+            <ul>
+                <li><label>Area:</label> <span>1,972,550 sq km</span></li>
+                <li><label>Population:</label> <span>131,900,000</span></li>
+                <li><label>Capital:</label> <span>México City</span></li>
+                <li><label>Languages:</label> <span>Spanish, Indigenous</span></li>
+                <li><label>Currency:</label> <span>Méxican Peso</span></li>
+                <li><label>Time Zone:</label> <span>UTC-5, UTC-6, UTC-7, UTC-8</span></li>
+                <li><label>Calling Code:</label> <span>+52</span></li>
+                <li><label>Internet TLD:</label> <span>.mx</span></li>
+            </ul>
+        </section>
+
+        <section class="info-box weather">
+            <h2>Weather</h2>
+
+            <!-- Mobile-only icon -->
+            <img src="images/sunny_icon.svg" alt="Weather icon" class="weather-icon mobile-only" />
+
+            <ul>
+                <li><label>Temperature:</label> <span>25 °C</span></li>
+                <li><label>Conditions:</label> <span>Sunny</span></li>
+                <li><label>Wind:</label> <span>13 km/h</span></li>
+                <li><label>Wind Chill:</label> <span>27 °C</span></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 💼 Antonio Melendez 💼 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
