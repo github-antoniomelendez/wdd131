@@ -1,0 +1,137 @@
+@media (min-width: 600px) {
+    /* Hide hamburger */
+    #menu-toggle {
+        display: none;
+    }
+    
+    /* Horizontal nav */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        background-color: #003366;
+    }
+    
+    nav a {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    /* Grid container */
+    .res-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1800px;
+        margin: 0 auto;
+        align-items: start;
+    }
+    
+    main {
+        max-width: 2000px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    /* Card layout */
+    .temple-card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 1.5rem;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .temple-card img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 16 / 10;
+        margin-top: 1rem;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    footer {
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (min-width: 1500px) {
+
+    /* Hide hamburger */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Horizontal nav */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        background-color: #003366;
+    }
+
+    nav a {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    /* Grid container */
+    .res-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1800px;
+        margin: 0 auto;
+        align-items: start;
+    }
+
+    main {
+        max-width: 2000px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    /* Card layout */
+    .temple-card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 1.5rem;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .temple-card img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 16 / 10;
+        margin-top: 1rem;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+}
