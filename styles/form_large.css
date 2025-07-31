@@ -1,0 +1,55 @@
+/* Base desktop layout */
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #e2e3ec;
+}
+
+form {
+    gap: 1.2rem;
+}
+
+.rating {
+    justify-content: flex-start;
+}
+
+button {
+    width: 50%;
+    align-self: center;
+}
+
+/* ----- Medium desktops ----- */
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 850px;
+        padding: 2.5rem;
+        background-color: #e2e3ec;
+    }
+
+    button {
+        width: 40%;
+        font-size: 1.3rem;
+    }
+
+    .rating label {
+        font-size: 1.5rem;
+    }
+}
+
+/* ----- Large desktops ----- */
+@media screen and (min-width: 1280px) {
+    body {
+        background-color: #eee;
+    }
+
+    main {
+        max-width: 960px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        background-color: #e2e3ec;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+}
